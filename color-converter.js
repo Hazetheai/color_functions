@@ -54,19 +54,21 @@ function convertToTDVals(rgbaVals) {
       .exec(val.color)[0]
       .split(",")
       .map((el) => el.replace(/\D/, ""));
+
+    console.log(`rgbaArr`, rgbaArr);
     return {
       pos: val.stop,
       r: rgbToDecimal(rgbaArr[0]),
       g: rgbToDecimal(rgbaArr[1]),
       b: rgbToDecimal(rgbaArr[2]),
-      a: rgbToDecimal(rgbaArr[3]),
+      a: parseFloat(rgbaArr[3]),
     };
   });
 }
 
 const options = {
   delimiter: {
-    wrap: "\t", // Usually a Double Quote (") character
+    wrap: '"', // Usually a Double Quote (") character
     field: "\t", // Usually a Comma field delimiter
   },
 };

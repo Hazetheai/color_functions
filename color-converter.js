@@ -44,7 +44,7 @@ function convertToRgbVals(hslaVals) {
 }
 
 function rgbToDecimal(num) {
-  return parseFloat(num / 255, 10).toFixed(7);
+  return parseFloat(parseFloat(num / 255, 10).toFixed(7));
 }
 
 function convertToTDVals(rgbaVals) {
@@ -64,6 +64,13 @@ function convertToTDVals(rgbaVals) {
   });
 }
 
+const options = {
+  delimiter: {
+    wrap: "\t", // Usually a Double Quote (") character
+    field: "\t", // Usually a Comma field delimiter
+  },
+};
+
 (async function run() {
   try {
     const applicableString = extractGradientString(pastedText);
@@ -82,10 +89,10 @@ function convertToTDVals(rgbaVals) {
     let json2csvCallback = function (err, csv) {
       if (err) throw err;
 
-      fs.writeFileSync(__dirname + "/output/tdRampData.csv", csv);
+      fs.writeFileSync(__dirname + "/output/tdRampData.py", csv);
     };
 
-    converter.json2csv(TDVals, json2csvCallback);
+    converter.json2csv(TDVals, json2csvCallback, options);
   } catch (err) {
     console.log(err);
   }

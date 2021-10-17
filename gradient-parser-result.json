@@ -1,0 +1,110 @@
+[
+  {
+    "original": "to right bottom, #FF0000 0%, #00FF00 20px, rgb(0, 0, 255) 100%",
+    "colorStopList": [
+      {
+        "color": "#FF0000",
+        "position": "0%"
+      },
+      {
+        "color": "#00FF00",
+        "position": "20px"
+      },
+      {
+        "color": "rgb(0, 0, 255)",
+        "position": "100%"
+      }
+    ],
+    "line": "to right bottom",
+    "sideCorner": "right bottom"
+  },
+  {
+    "original": "to right bottom, rgba(255, 0, 0, .1) 0%, rgba(0, 255, 0, 0.9) 20px",
+    "colorStopList": [
+      {
+        "color": "rgba(255, 0, 0, .1)",
+        "position": "0%"
+      },
+      {
+        "color": "rgba(0, 255, 0, 0.9)",
+        "position": "20px"
+      }
+    ],
+    "line": "to right bottom",
+    "sideCorner": "right bottom"
+  },
+  {
+    "original": "#FF0000 0%, #00FF00 20px, rgb(0, 0, 255) 100%",
+    "colorStopList": [
+      {
+        "color": "#FF0000",
+        "position": "0%"
+      },
+      {
+        "color": "#00FF00",
+        "position": "20px"
+      },
+      {
+        "color": "rgb(0, 0, 255)",
+        "position": "100%"
+      }
+    ]
+  },
+  {
+    "original": "45deg, red, blue",
+    "colorStopList": [
+      {
+        "color": "red"
+      },
+      {
+        "color": "blue"
+      }
+    ],
+    "line": "45deg",
+    "angle": "45deg"
+  },
+  {
+    "original": "135deg, orange, orange 60%, cyan",
+    "colorStopList": [
+      {
+        "color": "orange"
+      },
+      {
+        "color": "orange",
+        "position": "60%"
+      },
+      {
+        "color": "cyan"
+      }
+    ],
+    "line": "135deg",
+    "angle": "135deg"
+  },
+  {
+    "original": "to right, red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%",
+    "colorStopList": [
+      {
+        "color": "red",
+        "position": "20%"
+      },
+      {
+        "color": "orange",
+        "position": "20%"
+      },
+      {
+        "color": "yellow",
+        "position": "40%"
+      },
+      {
+        "color": "green",
+        "position": "60%"
+      },
+      {
+        "color": "blue",
+        "position": "80%"
+      }
+    ],
+    "line": "to right",
+    "sideCorner": "right"
+  }
+]

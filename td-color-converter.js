@@ -73,9 +73,12 @@ const options = {
   },
 };
 
-(async function run() {
+function cssGradientToTD(cssString) {
   try {
-    const applicableString = extractGradientString(pastedText);
+    if (!cssString) {
+      throw Error("No CSS String provided");
+    }
+    const applicableString = extractGradientString(cssString || pastedText);
 
     const hslaVals = extractHSLAVals(applicableString);
 
@@ -98,4 +101,6 @@ const options = {
   } catch (err) {
     console.log(err);
   }
-})();
+}
+
+module.exports = { cssGradientToTD };

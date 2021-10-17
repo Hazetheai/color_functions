@@ -1,4 +1,4 @@
-const { HSLAToRGBA } = require("./color-converter");
+const { HSLAToRGBA } = require("./color-functions");
 const { HSLARe } = require("./color-regexes");
 const fs = require("fs");
 const converter = require("json-2-csv");
